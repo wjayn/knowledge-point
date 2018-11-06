@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.swiper-slide img{
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+/* 无违法 */
+/*.swiper-slide:nth-of-type(1) img:nth-of-type(1){width: 80%;top:0; left: 2%;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(2){width: 18%;right: 32%;top: 45%;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(3){width: 10%;left: 14%;top: 48%;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(4){width: 22%;right: 7%;top: 46%;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(5){width: 8%;left: 30%;top: 57%;z-index: 100;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(6){width: 14%;left: 62%;top: 42%;z-index: 100;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(7){width: 12%;left: 44%;top: 55%;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(8){width: 100%;left: 0;top: 62%;}*/
+/* 连续无交通违法日 */
+.swiper-slide:nth-of-type(1) img:nth-of-type(1){width: 80%;top:2%; left: 2%;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(2){width: 16%;right: 5%;top: 38%;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(3){width: 10%;right: 30%;top: 38%;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(4){width: 22%;right: 15%;top: 40%;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(5){width: 8%;left: 30%;top: 57%;z-index: 100;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(6){width: 13%;left: 62%;top: 46%;z-index: 100;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(7){width: 12%;left: 44%;top: 55%;}
+.swiper-slide:nth-of-type(1) img:nth-of-type(8){width: 100%;left: 0;top: 62%;}
+/* 坐高单次违法扣分 */
+.swiper-slide:nth-of-type(2) img:nth-of-type(1){width: 80%;top:2%; left:2%;}
+.swiper-slide:nth-of-type(2) img:nth-of-type(2){width: 16%;right: 5%;top: 38%;}
+.swiper-slide:nth-of-type(2) img:nth-of-type(3){width: 10%;right: 30%;top: 38%;}
+.swiper-slide:nth-of-type(2) img:nth-of-type(4){width: 22%;right: 15%;top: 40%;}
+.swiper-slide:nth-of-type(2) img:nth-of-type(5){width: 20%;left: 24%;top: 54%;z-index: 100;}
+.swiper-slide:nth-of-type(2) img:nth-of-type(6){width: 24%;left: 34%;top: 54%;z-index: 100;}
+.swiper-slide:nth-of-type(2) img:nth-of-type(7){width: 13%;left: 62%;top: 46%;z-index: 100;}
+.swiper-slide:nth-of-type(2) img:nth-of-type(8){width: 100%;left: 0;top: 62%;}
+/* 最多交通违法类型 */
+.swiper-slide:nth-of-type(3) img:nth-of-type(1){width: 80%;top:2%; left: 2%;}
+.swiper-slide:nth-of-type(3) img:nth-of-type(2){width: 16%;right: 5%;top: 38%;}
+.swiper-slide:nth-of-type(3) img:nth-of-type(3){width: 10%;right: 30%;top: 38%;}
+.swiper-slide:nth-of-type(3) img:nth-of-type(4){width: 22%;right: 15%;top: 40%;}
+
+.swiper-slide:nth-of-type(3) img:nth-of-type(5){width: 16%;left: 34%;top: 60%;z-index: 100;}
+.swiper-slide:nth-of-type(3) img:nth-of-type(6){width: 3%;left: 43%;top: 61%;z-index: 100;}
+.swiper-slide:nth-of-type(3) img:nth-of-type(7){width: 30%;left: 6%;top: 52%;z-index: 100;}
+.swiper-slide:nth-of-type(3) img:nth-of-type(8){width: 13%;left: 43%;top: 46%;z-index: 100;}
+
+.swiper-slide:nth-of-type(3) img:nth-of-type(9){width: 13%;left: 62%;top: 46%;z-index: 100;}
+.swiper-slide:nth-of-type(3) img:nth-of-type(10){width: 100%;left: 0;top: 62%;}
+/* 最多单笔罚金 */
+.swiper-slide:nth-of-type(4) img:nth-of-type(1){width: 90%;top:2%; left: 2%;}
+.swiper-slide:nth-of-type(4) img:nth-of-type(2){width: 16%;right: 5%;top: 38%;}
+.swiper-slide:nth-of-type(4) img:nth-of-type(3){width: 10%;right: 30%;top: 38%;}
+.swiper-slide:nth-of-type(4) img:nth-of-type(4){width: 22%;right: 15%;top: 40%;}
+
+.swiper-slide:nth-of-type(4) img:nth-of-type(5){width: 11%;left: 52%;top: 54%;z-index: 100;}
+.swiper-slide:nth-of-type(4) img:nth-of-type(6){width: 18%;left: 43%;top: 55%;z-index: 100;}
+.swiper-slide:nth-of-type(4) img:nth-of-type(7){width: 20%;left: 14%;top: 50%;z-index: 100;}
+
+.swiper-slide:nth-of-type(4) img:nth-of-type(8){width: 13%;left: 62%;top: 46%;z-index: 100;}
+.swiper-slide:nth-of-type(4) img:nth-of-type(9){width: 100%;left: 0;top: 62%;}
+/* 交通违法总罚金 */
+.swiper-slide:nth-of-type(5) img:nth-of-type(1){width: 80%;top:2%; left: 2%;}
+.swiper-slide:nth-of-type(5) img:nth-of-type(2){width: 30%;right: 11%;top: 50%; z-index: 100;}
+.swiper-slide:nth-of-type(5) img:nth-of-type(3){width: 10%;right: 23%;top: 39%;}
+.swiper-slide:nth-of-type(5) img:nth-of-type(4){width: 4%;right: 37%;top: 45%;}
+.swiper-slide:nth-of-type(5) img:nth-of-type(5){width: 100%;left: 0;top: 62%;}
+/* 交通违法总扣分 */
+.swiper-slide:nth-of-type(6) img:nth-of-type(1){width: 80%;top:2%; left: 2%;}
+.swiper-slide:nth-of-type(6) img:nth-of-type(2){width: 30%;right: 11%;top: 50%; z-index: 100;}
+.swiper-slide:nth-of-type(6) img:nth-of-type(3){width: 10%;right: 23%;top: 39%;}
+.swiper-slide:nth-of-type(6) img:nth-of-type(4){width: 4%;right: 37%;top: 45%;}
+.swiper-slide:nth-of-type(6) img:nth-of-type(5){width: 100%;left: 0;top: 62%;}
+/* 交通违法总次数 */
+.swiper-slide:nth-of-type(7) img:nth-of-type(1){width: 80%;top:2%; left: 2%;}
+.swiper-slide:nth-of-type(7) img:nth-of-type(2){width: 30%;right: 11%;top: 50%; z-index: 100;}
+.swiper-slide:nth-of-type(7) img:nth-of-type(3){width: 10%;right: 23%;top: 39%;}
+.swiper-slide:nth-of-type(7) img:nth-of-type(4){width: 4%;right: 37%;top: 45%;}
+.swiper-slide:nth-of-type(7) img:nth-of-type(5){width: 100%;left: 0;top: 62%;}
+/* 无违法累计天数 */
+/*.swiper-slide:nth-of-type(9) img:nth-of-type(1){width: 80%;top:2%; left: 2%;}
+.swiper-slide:nth-of-type(9) img:nth-of-type(2){width: 30%;right: 11%;top: 50%; z-index: 100;}
+.swiper-slide:nth-of-type(9) img:nth-of-type(3){width: 10%;right: 23%;top: 39%;}
+.swiper-slide:nth-of-type(9) img:nth-of-type(4){width: 4%;right: 37%;top: 45%;}
+.swiper-slide:nth-of-type(9) img:nth-of-type(5){width: 100%;left: 0;top: 62%;}*/
+/* 我的驾驶轨迹 */
+.swiper-slide:nth-of-type(8) img:nth-of-type(1){width: 90%;top:2%; left: 5%;}
+.swiper-slide:nth-of-type(8) img:nth-of-type(2){width: 100%;left: 0;top: 82%; z-index: 100;}
+.swiper-slide:nth-of-type(8) img:nth-of-type(3){width: 64%;left: 18%;top: 30%; z-index: 100;}
+
+.swiper-slide .jiantou{top: 89%; left: 45%; z-index: 50; width: 10%; z-index: 150;}
+.swiper-slide .font{position: absolute;top: 32%; left: 10%; z-index: 50; width: 50%;}
+.swiper-slide .firstFont{position: absolute;top: 29%; left: 10%; z-index: 50; width: 50%;}
+.swiper-slide .bottomFont{position: absolute;top: 40%; left: 10%; z-index: 50; width: 50%;}
+.swiper-slide .smallBottomFont{position: absolute;top: 36%; left: 10%; z-index: 50; width: 50%;}
+.swiper-slide p:nth-of-type(1){font-size: 36px;color: #00AFBD;}
+.swiper-slide p.special{font-size: 22px;}
+.swiper-slide p:nth-of-type(2){font-size: 18px;}
+.swiper-slide .trajectory{position: relative; width: 64%; height: 50%;left: 18%;top: 25%; z-index: 100;  }
+.swiper-slide .trajectory p:nth-of-type(1){ position: absolute; top: 18%; left: 4%;font-size: 30px;color: #00AFBD; font-weight:bold;}
+.swiper-slide .trajectory p:nth-of-type(2){ position: absolute; top: 14%; left: 53%;font-size: 26px;color: #00AFBD; font-weight:bold;}
+.swiper-slide .trajectory p:nth-of-type(3){ position: absolute; top: 66%; left: 43%;font-size: 22px;color: #00AFBD; font-weight:bold; }
+.swiper-slide .trajectory p:nth-of-type(4){ position: absolute; top: 59%; left: 0%;font-size: 20px;color: #00AFBD; font-weight:bold;}
+.swiper-slide .trajectory p:nth-of-type(5){ position: absolute; top: 41%; left: 86%;font-size: 16px;color: #00AFBD; font-weight:bold;}
+.swiper-slide .trajectory p:nth-of-type(6){ position: absolute;width: 100%;text-align:center;bottom: 0; left: 0;font-size: 16px;color: #00AFBD;}
+
+.bigBox{width: 100%;height: 100%; position: relative; opacity: 0.3;}
+.bigBox img:nth-of-type(1){ position:absolute; top:0;left:0; right:0; bottom:0;width: 100%;height: 100%;}
+.bigBox img:nth-of-type(2){ position:absolute; top:87%; left: 7%; width: 40%;z-index: 100;}
+.bigBox img:nth-of-type(3){ position:absolute; top:87%; right: 7%; width: 40%;z-index: 100;}
+.bigBox .zhezhao{display: none;position: absolute;width: 100%; height: 100%; z-index: 150; bottom: 0%; left: 0%;top: 0%;}

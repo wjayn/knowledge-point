@@ -1,0 +1,71 @@
+.team-content img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+    border: 0;
+}
+
+.thumbnail .caption{
+    border: 1px solid #dddddd;
+}
+
+.thumbnail h4 {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+}
+
+.thumbnail h5 {
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.video {
+    width: 650px;
+    height: 366px;
+    margin: 0 auto;
+}
+
+.videoB {
+    width: 650px;
+    height: 432px;
+    margin: 0 auto;
+}
+
+.joinContent {
+    padding: 0 160px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.joinContent p {
+    text-indent: 25px;
+}
+
+.joinContent h4 {
+    height: 26px;
+    border-left: 8px solid #233D53;
+    vertical-align: middle;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+
+video::-internal-media-controls-download-button {
+    display: none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px);
+}
+
+video::-webkit-media-controls-fullscreen-button {
+    visibility: hidden;
+}

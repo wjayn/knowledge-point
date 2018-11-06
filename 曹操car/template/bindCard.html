@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定实体卡</title>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no,address=no,email=no"/>
+    <link rel="stylesheet" href="../static/css/public/bootstrap.css">
+    <link href="../static/css/public/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/bindCard.css">
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/public.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container-fluid bg-white">
+    <div class="form">
+        <div class="border-bottom">
+            <label for="phone" class="col-xs-2">卡号</label>
+            <div class="col-xs-8">
+                <input type="tel" id="phone" placeholder="" maxlength="19"/>
+            </div>
+            <div class="col-xs-2">
+                <img class="scan" src="../static/images/bindCard/SYS.png" alt=""/>
+            </div>
+        </div>
+        <div class="border-bottom">
+            <label for="password" class="col-xs-2">密码</label>
+            <div class="input-group col-xs-10">
+                <input type="text" id="password" placeholder=""/>
+            </div>
+        </div>
+        <div class="border-bottom effective" style="font-weight: bold;">
+            <div class="col-xs-4">原卡是否有效</div>
+            <div class="col-xs-8">
+                <img class="invalid" src="../static/images/bindCard/DANX2.png" alt=""/>不失效
+                <img class="invalid" src="../static/images/bindCard/DANX2.png" alt=""/>失效
+            </div>
+        </div>
+    </div>
+    <div class="row submit_box">
+        <div class="col-xs-12" style="margin:10px 0 40px 0;">我已阅读并同意 <a href="#">《电子礼卡使用违章制度》</a></div>
+        <div class="col-xs-12">
+            <button type="submit" class="btn btn-block">提交</button>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $(".invalid").click(function () {
+            $(".invalid").attr('src','../static/images/bindCard/DANX2.png');
+            $(this).attr('src','../static/images/bindCard/DANXS.png');
+        })
+    });
+</script>
+</html>

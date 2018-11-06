@@ -1,0 +1,42 @@
+html, body, .payment_box {
+    background: url("../static/images/payment/paymoney.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.payment_box {
+    padding: 60px 56px;
+}
+
+.white_box {
+    height: 78%;
+    background: url("../static/images/payment/paymoney1.png") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+.white_box .money {
+    padding: 30px 0 40px;
+    font-size: .4rem;
+}
+
+.white_box .details {
+    color: #888;
+    font-size: .26rem;
+}
+
+.white_box .bar_code {
+    padding: 15px 30px;
+    height: 110px;
+    background: #d43f3a;
+}
+
+.white_box .QR_code {
+    height: 150px;
+    width: 150px;
+    background: #d43f3a;
+}
+
+.white_box .num {
+    font-size: .26rem;
+}

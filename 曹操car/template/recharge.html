@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>续费</title>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no,address=no,email=no"/>
+    <link rel="stylesheet" href="../static/css/public/bootstrap.css">
+    <link href="../static/css/public/global.css" rel="stylesheet">
+    <link href="../static/css/public/swiper-4.0.7.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/recharge.css">
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/public.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/swiper-4.0.7.min.js"></script>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="../static/images/index/banner1.png" alt=""/>
+        </div>
+        <div class="swiper-slide">
+            <img src="../static/images/index/banner2.png" alt=""/>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-white" style="padding-bottom: 20px;">
+    <div class="row">
+        <div class="col-xs-12 col_height border-bottom">
+            <span>充值油豆：&nbsp; <span>120</span>豆</span>
+            <span class="pull-right" style="color: #888;">相当于<span>120</span>元购买</span>
+        </div>
+        <div class="col-xs-12 col_height border-bottom">金额：&nbsp;100元</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" style="padding:10px 15px;">充值方式</div>
+        <div class="col-xs-12 col_height payImg">
+            <img src="../static/images/recharge/WEIX.png" alt="">微信支付
+            <img class="pull-right" src="../static/images/recharge/DANXS.png" alt="">
+        </div>
+        <div class="col-xs-12 col_height payImg">
+            <img src="../static/images/recharge/YINH.png" alt="">银联支付
+            <img class="pull-right" src="../static/images/recharge/DANX.png" alt="">
+        </div>
+        <div class="col-xs-12">
+            <button type="submit" class="btn btn-block submit">确认</button>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            }
+        });
+        $('.payImg').click(function () {
+            $('.payImg img:last-child').attr('src', '../static/images/recharge/DANX.png');
+            $(this).find('img:last-child').attr('src', '../static/images/recharge/DANXS.png');
+            $(this).attr('select','true');
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,62 @@
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.margin_top {
+    margin-top: 16px;
+}
+
+.row_padding {
+    padding: 0 8px;
+}
+
+.col-xs-4, .col-xs-6 {
+    padding: 2px 4px;
+}
+
+.col-xs-4 img, .col-xs-6 img {
+    display: block;
+    width: 100%;
+}
+
+.num {
+    top: 24%;
+    left: 10%;
+    font-size: .26rem;
+    color: #fff;
+}
+
+.num span:nth-of-type(1) {
+    font-size: .76rem;
+    margin-right: 3px;
+    display: block;
+    float: left;
+}
+
+.buy {
+    top: 66%;
+    right: 7%;
+    font-size: .28rem;
+    color: #fff;
+    padding: 2px 6px;
+    background: #ffffff;
+    border-radius: 3px;
+}
+
+.blue {
+    color: #34B7F4;
+}
+
+.violet {
+    color: #694ACA;
+}

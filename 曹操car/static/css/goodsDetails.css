@@ -1,0 +1,38 @@
+
+.border_bottom {
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.row_padding {
+    padding: 15px 15px 25px;
+}
+
+.details .col-xs-4 {
+    padding: 24px 7px;
+    margin-top: 10px;
+    border: 1px solid #f7f7f7;
+}
+
+.details .col-xs-8 {
+    padding: 10px 0 0 12px;
+}
+
+.details img {
+    width: 100%;
+}
+
+.glyphicon_font .glyphicon {
+    font-size: .5rem;
+    background: #ffffff;
+    color: #32BBFF;
+    margin-top: 2px;
+}
+
+.explain{
+    padding: 14px 0 0 15px;
+}
+.explain span:nth-of-type(2){
+    color: #888;
+    display: block;
+    padding: 4px 0;
+}

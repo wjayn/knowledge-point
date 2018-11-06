@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的券包</title>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no,address=no,email=no"/>
+    <link rel="stylesheet" href="../static/css/public/bootstrap.css">
+    <link href="../static/css/public/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/tickets.css">
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/public.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .line-wrapper {
+            overflow: hidden;
+        }
+
+        .line-scroll-wrapper {
+            white-space: nowrap;
+            clear: both;
+        }
+
+        .line-btn-delete {
+            float: left;
+            width: 100px;
+        }
+
+        .line-btn-delete div {
+            width: 100px;
+            height: 135px;
+            background: red;
+            color: #fff;
+            line-height: 135px;
+        }
+
+        .line-normal-wrapper {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <!-- Nav tabs -->
+    <ul class="nav_title">
+        <li class="col-xs-4 active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">加油券</a></li>
+        <li class="col-xs-4"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">打车券</a></li>
+        <li class="col-xs-4"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">优惠券</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="row tab-content content line-wrapper" style="background: #f7f7f7;">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <div class="line-scroll-wrapper">
+                <div class="line-normal-wrapper position_relative come_on_list">
+                    <img src="../static/images/tickets/ticket1.png" alt="">
+                    <p class="position_absolute tickets">打车券</p>
+                    <p class="position_absolute num"><span>30</span>元</p>
+                    <p class="position_absolute identifier">编号：1111111</p>
+                    <p class="position_absolute use">未使用</p>
+                    <p class="position_absolute time">有效期：2018-09-09</p>
+                </div>
+                <div class="line-btn-delete text-center">
+                    <div>删除</div>
+                </div>
+            </div>
+            <div class="line-scroll-wrapper">
+                <div class="line-normal-wrapper position_relative come_on_list">
+                    <img src="../static/images/tickets/ticket1.png" alt="">
+                    <p class="position_absolute tickets">打车券</p>
+                    <p class="position_absolute num"><span>30</span>元</p>
+                    <p class="position_absolute identifier">编号：1111111</p>
+                    <p class="position_absolute use">未使用</p>
+                    <p class="position_absolute time">有效期：2018-09-09</p>
+                </div>
+                <div class="line-btn-delete text-center">
+                    <div>删除</div>
+                </div>
+            </div>
+            <!--<div class="col-xs-12 position_relative come_on_list">
+                <img src="../static/images/tickets/ticket1.png" alt="">
+                <p class="position_absolute tickets">打车券</p>
+                <p class="position_absolute num"><span>30</span>元</p>
+                <p class="position_absolute identifier">编号：1111111</p>
+                <p class="position_absolute use">未使用</p>
+                <p class="position_absolute time">有效期：2018-09-09</p>
+            </div>
+            <div class="col-xs-12 position_relative come_on_list">
+                <img src="../static/images/tickets/ticket2.png" alt="">
+                <p class="position_absolute tickets">打车券</p>
+                <p class="position_absolute num"><span>30</span>元</p>
+                <p class="position_absolute identifier">编号：1111111</p>
+                <p class="position_absolute use">未使用</p>
+                <p class="position_absolute time">有效期：2018-09-09</p>
+            </div>
+            <div class="col-xs-12 position_relative come_on_list">
+                <img src="../static/images/tickets/ticket3.png" alt="">
+                <p class="position_absolute tickets">打车券</p>
+                <p class="position_absolute num"><span>30</span>元</p>
+                <p class="position_absolute identifier">编号：1111111</p>
+                <p class="position_absolute use">未使用</p>
+                <p class="position_absolute time">有效期：2018-09-09</p>
+            </div>-->
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">2222222222</div>
+        <div role="tabpanel" class="tab-pane" id="messages">3333333</div>
+    </div>
+</div>
+
+
+</body>
+<script>
+    $(document).ready(function () {
+        // 设定每一行的宽度=屏幕宽度+按钮宽度
+        $(".line-scroll-wrapper").width($(".line-wrapper").width() + $(".line-btn-delete").width());
+        // 设定常规信息区域宽度=屏幕宽度
+        $(".line-normal-wrapper").width($(".line-wrapper").width());
+
+        $(".line-btn-delete div").css({'height': $(".line-normal-wrapper").height(), 'line-height': $(".line-normal-wrapper").height() + 'px'});
+        $(".line-btn-delete").click(function () {
+            $(this).prev().find('img').attr('src', '../static/images/tickets/ticket3.png');
+            $(lastLeftObj).animate({marginLeft: "0"}, 500); // 右滑
+            $(this).remove();
+        });
+        // 获取所有行，对每一行设置监听
+        var lines = $(".line-normal-wrapper");
+        var len = lines.length;
+        var lastX, lastXForMobile;
+
+        // 用于记录被按下的对象
+        var pressedObj;  // 当前左滑的对象
+        var lastLeftObj; // 上一个左滑的对象
+
+        // 用于记录按下的点
+        var start;
+
+        // 网页在移动端运行时的监听
+        for (var i = 0; i < len; ++i) {
+            lines[i].addEventListener('touchstart', function (e) {
+                lastXForMobile = e.changedTouches[0].pageX;
+                pressedObj = this; // 记录被按下的对象
+
+                // 记录开始按下时的点
+                var touches = event.touches[0];
+                start = {
+                    x: touches.pageX, // 横坐标
+                    y: touches.pageY  // 纵坐标
+                };
+
+            });
+
+            lines[i].addEventListener('touchmove', function (e) {
+                // 计算划动过程中x和y的变化量
+                var touches = event.touches[0];
+                delta = {
+                    x: touches.pageX - start.x,
+                    y: touches.pageY - start.y
+                };
+
+                // 横向位移大于纵向位移，阻止纵向滚动
+                if (Math.abs(delta.x) > Math.abs(delta.y)) {
+                    event.preventDefault();
+                }
+            });
+
+            lines[i].addEventListener('touchend', function (e) {
+                if (!$(this).next().html()) {
+                    return
+                } else {
+                    if (lastLeftObj && pressedObj != lastLeftObj) { // 点击除当前左滑对象之外的任意其他位置
+                        $(lastLeftObj).animate({marginLeft: "0"}, 500); // 右滑
+                        lastLeftObj = null; // 清空上一个左滑的对象
+                    }
+                    var diffX = e.changedTouches[0].pageX - lastXForMobile;
+                    if (diffX < -150) {
+                        $(pressedObj).animate({marginLeft: "-100px"}, 500); // 左滑
+                        lastLeftObj && lastLeftObj != pressedObj &&
+                        $(lastLeftObj).animate({marginLeft: "0"}, 500); // 已经左滑状态的按钮右滑
+                        lastLeftObj = pressedObj; // 记录上一个左滑的对象
+                    } else if (diffX > 150) {
+                        if (pressedObj == lastLeftObj) {
+                            $(pressedObj).animate({marginLeft: "0"}, 500); // 右滑
+                            lastLeftObj = null; // 清空上一个左滑的对象
+                        }
+                    }
+                }
+            });
+        }
+
+        // 网页在PC浏览器中运行时的监听
+        for (var i = 0; i < len; ++i) {
+            $(lines[i]).bind('mousedown', function (e) {
+                lastX = e.clientX;
+                pressedObj = this; // 记录被按下的对象
+            });
+
+            $(lines[i]).bind('mouseup', function (e) {
+                if (!$(this).next().html()) {
+                    return
+                } else {
+                    if (lastLeftObj && pressedObj != lastLeftObj) { // 点击除当前左滑对象之外的任意其他位置
+                        $(lastLeftObj).animate({marginLeft: "0"}, 500); // 右滑
+                        lastLeftObj = null; // 清空上一个左滑的对象
+                    }
+                    var diffX = e.clientX - lastX
+
+                    if (diffX < -150) {
+                        $(pressedObj).animate({marginLeft: "-100px"}, 500); // 左滑
+                        lastLeftObj && lastLeftObj != pressedObj &&
+                        $(lastLeftObj).animate({marginLeft: "0"}, 500); // 已经左滑状态的按钮右滑
+                        lastLeftObj = pressedObj; // 记录上一个左滑的对象
+                    } else if (diffX > 150) {
+                        if (pressedObj == lastLeftObj) {
+                            $(pressedObj).animate({marginLeft: "0"}, 500); // 右滑
+                            lastLeftObj = null; // 清空上一个左滑的对象
+                        }
+                    }
+                }
+            });
+        }
+    });
+</script>
+</html>

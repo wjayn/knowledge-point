@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no,address=no,email=no"/>
+    <link rel="stylesheet" href="../static/css/public/bootstrap.css">
+    <link href="../static/css/public/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/goodsDetails.css">
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/public.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container-fluid bg-white">
+    <div class="row row_padding details border_bottom">
+        <div class="col-xs-4">
+            <img src="../static/images/goodsDetails/DAC.png" alt=""/>
+        </div>
+        <div class="col-xs-8">
+            <p style="font-size: .4rem">曹操专车代金券</p>
+            <p>面值：<span>20元</span></p>
+            <p class="glyphicon_font">
+                <span id="reduceNum" class="glyphicon glyphicon-minus-sign"></span>
+                <span style="font-size: .5rem;padding: 0 10px;">20</span>
+                <span id="addNum" class="glyphicon glyphicon-plus-sign"></span>
+            </p>
+        </div>
+    </div>
+    <div class="row" style="padding-bottom: 10px;">
+        <div class="col-xs-12">
+            <button type="submit" class="btn btn-block submit">购买</button>
+        </div>
+        <div class="col-xs-12 text-right border_bottom" style="padding: 10px 25px 20px 0; font-size: .32rem;">
+            <a href="recharge.html">充值</a>
+        </div>
+        <div class="col-xs-12 explain">
+            <span>使用说明:</span><br/>
+            <span>曹操专车代金券</span>
+        </div>
+        <div class="col-xs-12 explain">
+            <span>有效期:</span><br/>
+            <span>2018-01-09至2018-09-09</span>
+        </div>
+        <div class="col-xs-12 explain">
+            <span>使用限制:</span><br/>
+            <span>仅限陕西地区曹操专车加油站</span>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#addNum').click(function () {
+            let num = parseInt($(this).prev().html());
+            $(this).prev().html(num + 1);
+        });
+        $('#reduceNum').click(function () {
+            let num = parseInt($(this).next().html());
+            if (num !== 1) {
+                $(this).next().html(num - 1);
+            }
+        })
+    });
+</script>
+</html>

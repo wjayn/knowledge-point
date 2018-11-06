@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no,address=no,email=no"/>
+    <link rel="stylesheet" href="../static/css/public/bootstrap.css">
+    <link href="../static/css/public/global.css" rel="stylesheet">
+    <link href="../static/css/public/swiper-4.0.7.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/public.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/swiper-4.0.7.min.js"></script>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="../static/images/index/banner1.png" alt=""/>
+        </div>
+        <div class="swiper-slide">
+            <img src="../static/images/index/banner2.png" alt=""/>
+        </div>
+    </div>
+</div>
+<div class="container-fluid margin_top">
+    <div class="row row_padding">
+        <div class="col-xs-4">
+            <a href="payment.html"><img src="../static/images/index/homeicon2.png" alt=""/></a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#"><img src="../static/images/index/homeicon2.png" alt=""/></a>
+        </div>
+        <div class="col-xs-4">
+            <a href="recharge.html"><img src="../static/images/index/homeicon3.png" alt=""/></a>
+        </div>
+    </div>
+    <div class="row row_padding" style="margin-bottom: 10px;">
+        <div class="col-xs-4">
+            <a href="tickets.html"><img src="../static/images/index/homeicon4.png" alt=""/></a>
+        </div>
+        <div class="col-xs-4">
+            <a href="order.html"><img src="../static/images/index/homeicon5.png" alt=""/></a>
+        </div>
+        <div class="col-xs-4">
+            <a href="bindCard.html"><img src="../static/images/index/homeicon6.png" alt=""/></a>
+        </div>
+    </div>
+    <div class="row row_padding">
+        <div class="col-xs-6 position_relative">
+            <img src="../static/images/index/ticket1.png" alt=""/>
+            <p class="position_absolute num">
+                <span>300</span>
+                <span>豆</span>
+            </p>
+            <p class="position_absolute buy blue">购买</p>
+        </div>
+        <div class="col-xs-6 position_relative">
+            <img src="../static/images/index/ticket2.png" alt=""/>
+            <p class="position_absolute num">
+                <span>30</span>
+                <span>豆</span>
+            </p>
+            <p class="position_absolute buy violet">购买</p>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            }
+        });
+    });
+</script>
+</html>

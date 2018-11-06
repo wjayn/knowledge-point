@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>产品中心-交通安全信息卡</title>
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+ </head>
+<body>
+<!--  header  -->
+<div id="head"></div>
+
+
+<div style="background: #92DFEF"><img src="assets/img/product-card01.jpg" class="center-block"></div>
+<div class="container text-center">
+  <img src="assets/img/product-card02.jpg">
+  <img src="assets/img/product-card03.jpg">
+  <img src="assets/img/product-card04.jpg">
+  <img src="assets/img/product-card05.jpg">
+  <img src="assets/img/product-card06.jpg">
+  <img src="assets/img/product-card07.jpg">
+  <img src="assets/img/product-card08.jpg">
+  <img src="assets/img/product-card09.jpg">
+  <img src="assets/img/product-card10.jpg">
+</div>
+
+
+<div id="foot"></div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script>
+  $('#head').load('header.html',function () {
+    $('#myTabs li[role="presentation"]').eq(1).addClass('active');
+  });
+  $('#foot').load('footer.html');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+.padding_top {
+    padding: 100px 15px 20px;
+}
+.result_img img{
+    width: 56px;
+}
+.result_img p{
+    margin: 16px 0 40px;
+    font-size: .32rem;
+}

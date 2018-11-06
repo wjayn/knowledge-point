@@ -1,0 +1,29 @@
+
+.row_padding {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.details .col-xs-3 {
+    padding: 18px 0;
+    margin-top: 10px;
+    border: 1px solid #f7f7f7
+}
+
+.details .col-xs-9 {
+    padding: 10px 0 0 20px;
+}
+
+.details .col-xs-9 p:nth-of-type(1) {
+    font-size: .34rem;
+    font-weight: bold;
+}
+
+.details .col-xs-9 p:nth-of-type(4) {
+    font-size: .32rem;
+    color: #888;
+}
+
+.details img {
+    width: 100%;
+}
